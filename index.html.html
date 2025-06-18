@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RNA 코돈의 경우의 수와 아미노산 생성</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #111;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.85);
+      border-bottom: 1px solid #444;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00b4ff;
+      margin-right: 40px;
+    }
+    nav a {
+      margin-right: 20px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .hero {
+      padding: 80px 20px 40px;
+      background: url('https://images.unsplash.com/photo-1581091012184-7f03c8b4e0e4?auto=format&fit=crop&w=1400&q=80') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .hero h2 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #ddd;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    article {
+      flex: 3;
+      padding-right: 20px;
+    }
+    article p {
+      margin-bottom: 1em;
+    }
+    aside {
+      flex: 1;
+      border-left: 1px solid #333;
+      padding-left: 20px;
+      color: #aaa;
+    }
+    aside .card {
+      background: #222;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Sinamon1411 뉴스</div>
+    <nav>
+      <a href="#">정치</a><a href="#">경제</a><a href="#">국제</a><a href="#">과학</a><a href="#">교육</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h1>RNA 코돈의 경우의 수와 아미노산 생성</h1>
+    <h2>수학과 생물의 융합을 시도한 고등학생의 탐구</h2>
+  </div>
+  <div class="container">
+    <article>
+      <pre style="white-space: pre-wrap; font-family: inherit;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/DNA_chemical_structure.svg/1200px-DNA_chemical_structure.svg.png" 
+     alt="DNA 구조" style="max-width:100%; margin: 20px 0; border:1px solid #444;">
+1. 이 주제를 왜 선택했는가? 
+
+유전자가 어떻게 단백질을 만들고 생명체의 특성을 결정하는지를 배우며 DNA의 역할에 관심이 생겼습니다. 특히 DNA 정보가 RNA를 거쳐 단백질로 번역되는 과정에서 수학적인 규칙성이 있다는 점이 흥미로웠습니다. 그 중에서도 3개의 염기로 구성된 코돈이 단백질의 기본 단위인 아미노산을 만든다는 사실을 알게 되었고, 이 과정에 경우의 수 개념이 활용될 수 있음을 깨달아 이 주제를 선택하게 되었습니다.
+
+2. 어떤 점에서 흥미를 느꼈는가? 
+
+DNA는 단순한 문자 조합처럼 보이지만, 그 속에는 수학적 규칙이 숨어 있다는 점이 매우 흥미로웠습니다. 4개의 염기가 3개씩 조합되어 64가지 코돈을 만들고,<br><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Codon_table_standard.png/800px-Codon_table_standard.png" alt="코돈 표" style="max-width:100%; margin: 20px 0; border:1px solid #444;"> 이 코돈이 20가지 아미노산을 생성한다는 구조는 마치 암호 체계처럼 느껴졌습니다. 특히 동일한 아미노산을 여러 코돈이 지정한다는 것이 경우의 수 개념과 연결된다는 사실이 재미있었고, 과학과 수학이 어떻게 연결되는지를 이해할 수 있었습니다.
+
+3. 실생활과 어떤 관련이 있는가? 
+
+코돈 조합과 아미노산 생성은 단순한 이론이 아니라 실제로 질병 유전자 분석, 백신 개발, 유전자 치료 등 다양한 의료 현장에서 활용됩니다. 예를 들어 mRNA 백신은 스파이크 단백질을 만들 수 있는 코돈 서열을 설계하여 면역 반응을 유도합니다. 또한 유전자 돌연변이가 코돈 단위로 바뀌면 단백질 구조에 영향을 주어 질병이 발생할 수 있기 때문에, 염기서열과 아미노산 사이의 경우의 수 관계를 이해하는 것은 현대 의학에서 매우 중요한 역할을 합니다.
+
+4. 공통수학1의 내용을 포함한 관련 수학 개념 
+
+이 주제에서는 공통수학1에서 배우는 경우의 수와 순열 개념이 핵심적으로 활용됩니다. DNA의 염기는 A(아데닌), T(티민), C(시토신), G(구아닌)으로 구성되며, RNA에서는 T가 U(유라실)로 바뀝니다. mRNA의 코돈은 3개의 염기로 구성되므로, 가능한 조합 수는 4 x 4 x 4 = 64가지입니다. 이는 중복을 허용하고 순서를 고려하는 경우의 수(곱의 법칙) 문제로 볼 수 있습니다. 그리고 이 64개의 코돈이 20개의 아미노산으로 다대일 대응되는 구조는 생물학적 중복성과 유전자 안정성의 근거가 되며, 수학적으로도 분석 가능합니다.
+
+5. 탐구 내용 및 결론 
+
+DNA는 생명체의 유전 정보를 담고 있으며, 이 정보는 단백질을 만드는 데 활용됩니다. 단백질 합성 과정에서 핵심이 되는 요소는 코돈(codon)인데, 이는 RNA 상에서 3개의 염기가 모여 하나의 단위를 이루는 구조입니다. 각각의 코돈은 특정 아미노산 하나를 지정하게 되며, 이 과정에서 등장하는 염기 조합의 경우의 수는 수학적으로 계산해볼 수 있는 흥미로운 대상입니다. 저는 이 조합이 얼마나 다양한지를 직접 계산해보고, 그것이 단백질 생성에 어떤 의미를 갖는지 분석해 보았습니다.
+RNA의 염기는 A(아데닌), U(유라실), C(시토신), G(구아닌) 총 4가지입니다. 하나의 코돈은 이 4가지 염기 중 3개를 순서를 고려하여 조합한 것이므로, 가능한 코돈의 수는 다음과 같습니다.
+4 	imes 4 	imes 4 = 4^3 = 64
+이는 공통수학1에서 배운 경우의 수의 곱의 법칙을 적용한 계산입니다. 염기 하나를 고르는 자리가 세 번 있고, 매 자리마다 4가지의 선택이 가능하므로 전체 조합은 4^3입니다. 이처럼 유전자 속에 존재하는 염기 배열의 다양성은 단순한 과학 지식이 아니라, 경우의 수로 구체적으로 설명할 수 있는 수학적 구조라는 점이 중요합니다.
+그러나 이 64가지 코돈이 모두 서로 다른 결과를 만드는 것은 아닙니다. 실제로는 20개의 아미노산과 3개의 종결(Stop) 코돈이 존재합니다. 즉, 여러 코돈이 하나의 아미노산을 지정하는 중복 구조를 가지고 있습니다. 이 구조는 유전자의 안정성과 생명체의 생존에 도움이 되며, 특정 코돈이 바뀌더라도 같은 아미노산이 만들어질 수 있도록 설계되어 있습니다.
+
+아미노산 이름   대응 코돈 수
+류신 (Leu)   6개
+세린 (Ser)   6개
+아르지닌 (Arg)   6개
+글라이신 (Gly)   4개
+발린 (Val)   4개
+알라닌 (Ala)   4개
+트레오닌 (Thr)   4개
+프롤린 (Pro)   4개
+페닐알라닌 (Phe)   2개
+아이소류신 (Ile)   3개
+시스테인 (Cys)   2개
+히스티딘 (His)   2개
+글루타민 (Gln)   2개
+아스파라긴 (Asn)   2개
+라이신 (Lys)   2개
+글루탐산 (Glu)   2개
+아스파르트산 (Asp)   2개
+타이로신 (Tyr)   2개
+메싸이오닌 (Met)   1개
+트립토판 (Trp)   1개
+종결코돈 (Stop)   3개
+
+이를 더 명확하게 이해하기 위해 각 아미노산이 몇 개의 코돈을 갖고 있는지를 막대그래프로 시각화해 보았습니다. 이를 통해 류신, 세린처럼 다양한 코돈을 갖는 아미노산과, 메싸이오닌처럼 오직 하나의 코돈만 갖는 아미노산의 차이를 한눈에 볼 수 있었습니다. 이런 시각화 작업을 통해 단순한 계산 결과를 실제 생물학적 의미와 연결해 볼 수 있었습니다.
+
+DNA 염기서열은 단순히 네 가지 염기의 나열이 아니라, 수학적 경우의 수 계산으로 설명할 수 있는 체계적인 정보 구조입니다. 코돈 조합 수인 64는 실제 생명체에서 만들어지는 단백질의 기반이 되며, 이는 중학교나 고등학교에서 배우는 수학 개념만으로도 충분히 이해할 수 있습니다. 특히, 수학적으로 가능한 조합 수(경우의 수)를 계산하는 것만으로도 유전자의 설계 원리를 설명할 수 있다는 점은 매우 인상 깊었습니다. 생명현상의 이면에 숨겨진 수학적 규칙을 이해하게 된 이 경험은, 앞으로도 다양한 과학적 현상을 수학적으로 탐구하고 싶다는 동기를 주었습니다.
+
+6. 심화 탐구 주제
+
+코돈의 변이가 단백질의 기능에 어떤 영향을 주는지 분석하고, 돌연변이가 일어날 확률을 경우의 수와 확률 이론으로 모델링해보고 싶습니다.
+
+7. 탐구 과정에서의 어려움과 노력 
+
+처음 이 주제를 접했을 때 DNA, RNA, 코돈, 아미노산 같은 용어들이 익숙하지 않아서 내용을 이해하는 데 어려움이 있었습니다. 그래서 통합과학 교과서를 다시 찾아보며 DNA의 구조와 단백질 합성 과정을 정리하고, 유전 정보가 어떻게 단백질로 바뀌는지 과정을 단계별로 정리해보았습니다. 이후 수학적인 분석을 위해 경우의 수 개념을 복습하면서, 염기가 4개이고 코돈은 3개의 염기로 구성된다는 사실을 바탕으로 직접 가능한 조합 수를 계산해보았습니다. 단순히 계산에서 끝나는 것이 아니라, 실제 유전자의 작동 방식과 연결된다는 점을 떠올리며 더 열심히 탐구에 몰입할 수 있었습니다. 과학과 수학이 함께 활용되는 사례라는 점에서 흥미를 느꼈고, 개념을 명확히 하기 위해 직접 표를 만들어보는 등 스스로 학습하려는 노력을 기울였습니다.
+</pre>
+    
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #444;">
+      <h3>💬 댓글 작성</h3>
+      <form style="display:flex; flex-direction:column; gap:10px;">
+        <input type="text" placeholder="이름을 입력하세요" style="padding:8px; background:#222; border:1px solid #555; color:#fff;">
+        <textarea placeholder="댓글을 입력하세요" rows="4" style="padding:8px; background:#222; border:1px solid #555; color:#fff;"></textarea>
+        <button type="submit" style="padding:10px; background:#00b4ff; color:#fff; border:none; cursor:pointer;">등록</button>
+      </form>
+    </div>
+    </article>
+
+    <aside>
+      <div class="card"><strong>관련 주제</strong><br>DNA, 코돈, 수학, 생물학</div>
+      <div class="card"><strong>작성자</strong><br>고등학생 대표</div>
+      <div class="card"><strong>공유하기</strong><br>카카오톡, 페이스북, 이메일</div>
+    
+    <div class="card"><strong>다른 기사</strong><br>
+      <ul style="list-style:none; padding-left:0; font-size: 14px;">
+        <li><a href="#" style="color:#00b4ff; text-decoration:none;">고등학생, 수학으로 암 진단 모델 설계</a></li>
+        <li><a href="#" style="color:#00b4ff; text-decoration:none;">mRNA 백신과 유전자 번역의 비밀</a></li>
+        <li><a href="#" style="color:#00b4ff; text-decoration:none;">AI가 해석한 유전자 데이터의 규칙성</a></li>
+        <li><a href="#" style="color:#00b4ff; text-decoration:none;">교과서 밖의 수학: 생명과학 속 숨은 논리</a></li>
+      </ul>
+    </div>
+    
+    <div class="card"><strong>기자</strong><br>신 하준 기자</div>
+    <div class="card"><strong>작성일</strong><br>2025년 6월 19일</div>
+    <div class="card"><strong>좋아요</strong><br>♥ 124</div>
+    <div class="card"><strong>댓글</strong><br>"너무 흥미로워요!"<br>"이런 기사 자주 보고 싶어요."</div>
+    <div class="card"><strong>광고</strong><br>
+      <a href="https://biohackstore.kr" target="_blank" style="color:#00ffcc; text-decoration:none;">
+      [BIOHACK] 유전자 맞춤 건강식품 20% 할인</a><br><br>
+      <a href="https://futurelabs.ai" target="_blank" style="color:#ffcc00; text-decoration:none;">
+      [FutureLabs AI] 생명과학 인공지능 무료 체험</a>
+    </div>
+    
+        <div class="card"><strong>기자</strong><br>신 하준 기자</div>
+        <div class="card"><strong>작성일</strong><br>2025년 6월 19일</div>
+        <div class="card"><strong>좋아요</strong><br>♥ 124</div>
+        <div class="card"><strong>댓글</strong><br>"너무 흥미로워요!"<br>"이런 기사 자주 보고 싶어요."</div>
+        <div class="card"><strong>광고</strong><br>
+          <a href="https://biohackstore.kr" target="_blank" style="color:#00ffcc; text-decoration:none;">
+          [BIOHACK] 유전자 맞춤 건강식품 20% 할인</a><br><br>
+          <a href="https://futurelabs.ai" target="_blank" style="color:#ffcc00; text-decoration:none;">
+          [FutureLabs AI] 생명과학 인공지능 무료 체험</a>
+        </div>
+        <div class="card"><strong>다른 기사</strong><br>
+          <ul style="list-style:none; padding-left:0; font-size: 14px;">
+            <li><a href="https://m.dongascience.com/news.php?idx=70024" target="_blank" style="color:#00b4ff; text-decoration:none;">유전자로 만든 암호, 생물자원 유출 막는다</a></li>
+            <li><a href="https://news.nate.com/view/20250213n28388" target="_blank" style="color:#00b4ff; text-decoration:none;">“유전자에도 비밀번호?”…네 글자 DNA 단어로 생물 자원 지킨다</a></li>
+            <li><a href="https://www.m-k.co.kr/news/it/11240415" target="_blank" style="color:#00b4ff; text-decoration:none;">신약 단백질·신품종 작물 철통보안…‘유전자 비밀번호’ 개발</a></li>
+            <li><a href="https://www.hani.co.kr/arti/science/science_general/1109443.html" target="_blank" style="color:#00b4ff; text-decoration:none;">생명은 DNA 아닌 RNA를 중심으로 진화했다</a></li>
+          </ul>
+        </div>
+        </aside>
+        
+    
+    
+  </div>
+  <footer>
+    © 2025 sinamon1411.github.io | 모든 권리 보유.
+  </footer>
+</body>
+</html>
